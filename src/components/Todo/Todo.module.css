@@ -1,0 +1,31 @@
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo + .todo {
+  margin-top: 10px;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+}
+
+.todo__title {
+  position: relative;
+  flex: 1 1 0;
+  font-size: 16px;
+  padding-left: 25px;
+}
+.todo__title.todo__check::after {
+  display: block;
+}
+
+.btn__delete {
+  width: 20px;
+  height: 20px;
+  color: var(--color-point);
+  padding: 0;
+}

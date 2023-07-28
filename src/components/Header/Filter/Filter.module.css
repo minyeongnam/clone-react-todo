@@ -1,0 +1,40 @@
+.filter {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.filter__item {
+  font-size: 14px;
+}
+.filter__item + .filter__item {
+  margin-left: 10px;
+}
+
+.filter__btn {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  font-size: 14px;
+  padding: 10px;
+  text-transform: capitalize;
+  color: var(--color-point);
+  opacity: 0.8;
+  font-weight: bold;
+}
+
+.filter__btn::after {
+  content: "";
+  display: block;
+  margin-top: 2px;
+  border: 1px solid transparent;
+}
+
+.filter__btn:hover,
+.filter__btn--selected {
+  opacity: 1;
+}
+
+.filter__selected::after {
+  border-color: var(--color-point);
+}

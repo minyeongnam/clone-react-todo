@@ -1,0 +1,29 @@
+.form {
+  display: flex;
+  padding: 20px;
+  background-color: var(--color-bg-dark);
+  border-top: 1px solid var(--color-gray);
+}
+
+.input {
+  flex: 1 1 auto;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 0;
+  outline: 0;
+  color: var(--color-text);
+  border-radius: 4px 0 0 4px;
+}
+
+.btn__add {
+  color: var(--color-white);
+  background-color: var(--color-point);
+  padding: 10px 30px;
+  font-size: 16px;
+  border-radius: 0 4px 4px 0;
+  opacity: 0.8;
+}
+
+.btn__add:hover {
+  opacity: 1;
+}
