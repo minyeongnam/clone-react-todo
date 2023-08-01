@@ -6,6 +6,19 @@
   --color-text: #002d62;
   --color-point: #6699cc;
   --color-scrollbar: #080808;
+  --color-gradient-start: #fdff9a;
+  --color-gradient-end: #89cff0;
+  --color-input: #fff;
+}
+
+html.dark:root {
+  --color-bg: #333;
+  --color-bg-dark: #222;
+  --color-gray: #666;
+  --color-text: #999;
+  --color-gradient-start: #00308f;
+  --color-gradient-end: #222;
+  --color-input: #333;
 }
 
 * {
@@ -24,8 +37,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(253, 255, 154);
-  background: linear-gradient(180deg, #fdff9a 0%, #89cff0 100%);
+  background: var(--color-gradient-start);
+  background: linear-gradient(
+    180deg,
+    var(--color-gradient-start) 0%,
+    var(--color-gradient-end) 100%
+  );
   accent-color: var(--color-point);
 }
 
