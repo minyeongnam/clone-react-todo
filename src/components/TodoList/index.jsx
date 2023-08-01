@@ -1,25 +1,20 @@
-import { useReducer } from "react";
+import { useEffect, useReducer } from "react";
 import AddTodo from "../AddTodo";
 import Todo from "../Todo";
 import { todoReducer } from "../../reducer/todoReducer";
 import styles from "./TodoList.module.css";
 
 export default function TodoList({ filter }) {
-  const [todos, dispatch] = useReducer(todoReducer, [
-    {
-      id: 1,
-      title: "11",
-      active: true,
-    },
-    {
-      id: 2,
-      title: "22",
-      active: false,
-    },
-  ]);
+  const [todos, dispatch] = useReducer(todoReducer, []);
   const handleAdded = (todo) => dispatch({ type: "added", todo });
   const handleDelete = (todo) => dispatch({ type: "delete", todo });
   const handleActive = (todo) => dispatch({ type: "actived", todo });
+
+  useEffect(() => {
+    if (localStorage.todos && localStorage.todos.length > 0) {
+      dispatch({ type: "setList", todos: JSON.parse(localStorage.todos) });
+    }
+  }, []);
 
   return (
     <section className={styles.container}>
