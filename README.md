@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<details>
+  <summary>목차</summary>
 
-## Available Scripts
+- [Todo list](#todo-list)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+    - [Windows](#windows)
+    - [Mac OS](#mac-os)
+  - [Installation](#installation)
+- [Usage](#usage)
+  - [프로젝트 기능들](#프로젝트-기능들)
 
-In the project directory, you can run:
+</details>
 
-### `npm start`
+## Todo list
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Todo list 클론코딩 프로젝트 입니다.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Todo list를 구현하였습니다.  
+DEMO : [사이트 바로가기](https://cute-profiterole-f299ad.netlify.app/)
+<br />
+<br />
 
-### `npm test`
+<p align="center"><img style="width:1000px" alt="스크린샷 2023-06-15 오후 7 50 26" src="https://github.com/minyeongnam/todo/assets/71241063/467a5c1c-a166-4922-81c1-1a71e7efa877"></p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### `npm run build`
+### Built With
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 언어: JavaScript
+- 라이브러리: React
+- 상태 관리: ContextAPI
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Windows
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+시스템에 Yarn을 설치할 때 Node.js 와 함께 번들로 제공되는 npm 패키지매니저를 이용해 Yarn을 설치하는 것이 좋습니다.  
+npm이 설치되면 다음을 실행하여 Yarn을 설치 하고 업그레이드 할 수 있습니다.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```sh
+npm install --global yarn
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### Mac OS
 
-## Learn More
+Homebrew 패키지매니저를 이용해 Yarn을 설치할 수 있습니다.  
+아직 설치되지 않은 경우 Node.js도 설치합니다.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```sh
+brew install yarn
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Installation
 
-### Code Splitting
+프로젝트를 사용하기 위해 먼저 다음 명령으로 종속성을 설치해야 합니다.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Install Yarn packages
 
-### Analyzing the Bundle Size
+   ```sh
+   yarn install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Making a Progressive Web App
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+프로젝트를 실행하려면 다음 명령을 사용하세요.
 
-### Advanced Configuration
+1. 개발 서버 실행
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   ```sh
+   yarn start
+   ```
 
-### Deployment
+   개발 서버 실행 후 [http://localhost:3000/](http://localhost:3000/)에서 실행
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+   <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### `npm run build` fails to minify
+### 프로젝트 기능들
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Todo List** 를 구현합니다
+
+- [x] 목록 조회
+- [x] 아이템 추가/삭제
+- [x] 아이템 완료 체크박스
+- [x] 아이템 필터링
+- [x] 다크모드 지원
+- [x] 로컬스토리 저장
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
